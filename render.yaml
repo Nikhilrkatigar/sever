@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: bank-audit-license-server
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: ADMIN_KEY
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DB
+        value: bank_audit_licensing
