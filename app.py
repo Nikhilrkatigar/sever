@@ -40,7 +40,7 @@ def _admin_auth():
 def index():
     return (
         "<html><body style='font-family:sans-serif;padding:40px'>"
-        "<h2>✅ Bank Audit License Server</h2>"
+        "<h2>&#x2705; Bank Audit License Server</h2>"
         "<p>Server is <strong>online</strong>.</p>"
         "<ul>"
         "<li><code>POST /validate</code> — client license check</li>"
